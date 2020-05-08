@@ -2,7 +2,7 @@ language: java
 
 before_install:
   - chmod +x mvnw
-  
+
 jdk:
   - openjdk8
 
@@ -17,4 +17,5 @@ jobs:
     - name: Build image
       stage: build
       script:
+        - mvn package
         - make build-image
