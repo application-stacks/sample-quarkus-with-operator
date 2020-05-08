@@ -1,0 +1,17 @@
+language: java
+
+jdk:
+  - openjdk8
+
+services: 
+  - docker
+
+stages:
+  - name: build
+
+jobs:
+  include:
+    - name: Build image
+      stage: build
+      script:
+        - make build-image
