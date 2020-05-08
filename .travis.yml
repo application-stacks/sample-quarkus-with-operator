@@ -11,6 +11,7 @@ services:
 
 stages:
   - name: build
+    if: branch = master AND fork = false AND type != pull_request
 
 jobs:
   include:
