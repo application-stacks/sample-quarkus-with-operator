@@ -1,0 +1,22 @@
+language: java
+
+before_install:
+  - chmod +x mvnw
+
+jdk:
+  - openjdk8
+
+services: 
+  - docker
+
+stages:
+  - name: build
+    if: branch = master AND fork = false AND type != pull_request
+
+jobs:
+  include:
+    - name: Build image
+      stage: build
+      script:
+        - mvn package
+        - make build-image
