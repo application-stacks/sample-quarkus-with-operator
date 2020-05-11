@@ -56,7 +56,7 @@ spec:
   expose: true
 ```
 
-This application is taken from the repo: https://github.com/quarkusio/quarkus-quickstarts
-Details about the requirements and other quickstart applications can be found at the above link.
-A guide for a step-by-step walk through of the application can be found at the below link.
+This application is taken from the repo: https://github.com/quarkusio/quarkus-quickstarts  
+Details about the requirements and other quickstart applications can be found at the above link.  
+A guide for a step-by-step walk through of the application can be found at the below link.  
 Quarkus guide: https://quarkus.io/guides/microprofile-health
